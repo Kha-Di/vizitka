@@ -3,42 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Моя визитка</title>
+  <title>Визитка · Динара Хамидуллина</title>
 
-  <!-- БАГ №1 (исправлено): было "styles.css", файл на самом деле называется "style.css" -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main class="card">
-    <div class="avatar">ХД</div>
+    <div class="avatar-ring">
+      <div class="avatar">❤</div>
+    </div>
 
-    <h1 class="name">Хамидуллина Динара Маратовна</h1>
+    <h1 class="name">Динара Хамидуллина</h1>
 
-    <p class="role">Студентка 1 курса · староста группы · будущий программист</p>
+    <p class="role">Студентка · Староста группы · Будущий программист</p>
 
     <p class="bio">
       Ответственная и коммуникабельная, легко беру на себя лидерство и организацию.
       Люблю разбираться в новых технологиях и доводить начатое до конца.
     </p>
 
+    <div class="divider"></div>
+
     <h2 class="subtitle">Чем увлекаюсь</h2>
     <ul class="interests">
-      <li>Программирование</li>
-      <li>Фотография</li>
-      <li>Готовка</li>
-      <li>Фильмы и сериалы</li>
+      <li class="chip">Программирование</li>
+      <li class="chip">Фотография</li>
+      <li class="chip">Готовка</li>
+      <li class="chip">Фильмы и сериалы</li>
     </ul>
 
     <div class="actions">
-      <!-- БАГ №3 (исправлено): id теперь совпадает с тем, что ищет script.js -->
-      <button id="contact-btn" class="btn">Показать контакт</button>
-
-      <button id="theme-btn" class="btn btn-ghost">🌙 Тема</button>
+      <button id="contact-btn" class="btn">Показать почту</button>
+      <button id="theme-btn" class="btn btn-ghost">Тема</button>
     </div>
 
-    <!-- почта спрятана, пока не нажмут кнопку -->
     <p id="contact" class="contact hidden">
-      ✉️ agafia.dornton@yandex.ru
+      agafia.dornton@yandex.ru
     </p>
   </main>
 
