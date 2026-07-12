@@ -1,0 +1,192 @@
+:root {
+  --green: #16302a;
+  --green-deep: #0d1f1a;
+  --green-card: #1f3d33;
+  --gold: #c9a227;
+  --gold-light: #e3c565;
+  --cream: #f5f0e6;
+  --ink-light: #d8d0bd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: var(--cream);
+  font-family: "Cormorant Garamond", serif;
+  color: var(--ink-light);
+  transition: background 0.4s ease;
+}
+
+/* ===== Карточка-визитка ===== */
+.card {
+  width: 380px;
+  padding: 44px 34px 34px;
+  background: var(--green-card);
+  border: 1px solid rgba(201, 162, 39, 0.35);
+  border-radius: 18px;
+  box-shadow: 0 24px 48px rgba(13, 31, 26, 0.35);
+  text-align: center;
+}
+
+.avatar-ring {
+  width: 92px;
+  height: 92px;
+  margin: 0 auto 20px;
+  padding: 4px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--green-card);
+  font-size: 34px;
+}
+
+.name {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: var(--gold-light);
+  font-size: 28px;
+  margin: 4px 0 12px;
+  letter-spacing: 0.01em;
+}
+
+.role {
+  display: inline-block;
+  color: var(--green-deep);
+  background: var(--gold);
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 6px 18px;
+  border-radius: 999px;
+  margin: 0 0 20px;
+}
+
+.bio {
+  color: var(--ink-light);
+  line-height: 1.6;
+  font-size: 17px;
+  margin: 0 0 8px;
+}
+
+.divider {
+  height: 1px;
+  margin: 26px 0 20px;
+  background: rgba(201, 162, 39, 0.35);
+}
+
+.subtitle {
+  font-family: "Playfair Display", serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--gold);
+  margin: 0 0 16px;
+}
+
+.interests {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.chip {
+  background: transparent;
+  border: 1px solid rgba(201, 162, 39, 0.5);
+  color: var(--gold-light);
+  font-size: 15px;
+  font-weight: 500;
+  padding: 7px 16px;
+  border-radius: 999px;
+}
+
+.actions {
+  margin-top: 28px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 11px 20px;
+  border: none;
+  border-radius: 999px;
+  background: var(--gold);
+  color: var(--green-deep);
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.btn:hover {
+  background: var(--gold-light);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 16px rgba(201, 162, 39, 0.3);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--gold-light);
+  border: 1px solid rgba(201, 162, 39, 0.5);
+}
+
+.btn-ghost:hover {
+  background: rgba(201, 162, 39, 0.12);
+  box-shadow: none;
+}
+
+.contact {
+  margin-top: 18px;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--gold-light);
+}
+
+.hidden {
+  display: none;
+}
+
+/* ===== Тёмная тема ===== */
+body.dark {
+  background: var(--green-deep);
+}
+
+body.dark .card {
+  background: #0a1815;
+  border-color: rgba(201, 162, 39, 0.5);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.5);
+}
+
+body.dark .avatar {
+  background: #0a1815;
+}
+
+body.dark .role {
+  background: var(--gold-light);
+}
+
+body.dark .contact {
+  color: var(--gold);
+}
